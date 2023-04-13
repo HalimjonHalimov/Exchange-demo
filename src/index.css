@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0 ;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +18,224 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Navbar  */
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+.exchange-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.exchange-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exchange-logo h1  a {
+  font-family: 'PT Root UI_Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.exchange-link {
+  margin-left: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exchange-link .social-links {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #00A3FF;
+  border: 1px solid #000;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.exchange-link .social-links:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.social-links span  {
+  position: absolute;
+  width: 148px;
+  height: 40px;
+  line-height: 40px;
+  top: 50px;
+  left: 50%;
+  display: none;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-family: 'PT Root UI_Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #121212;
+  border: 1px solid  #000;
+  transition: all 0.4s ease;
+}
+.social-links span::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -11px;
+  left: 62px;
+  transform: rotate(45deg);
+  background: #fff;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.exchange-link a img {
+  object-fit: cover;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar ul li {
+  position: relative;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+.navbar a {
+  font-family: 'PT Root UI_Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000000;
+}
+/* .navbar-active::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #000;
+  border: 2px solid #000000;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* Navbar  */
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 1);
+}
+.footer  h2 {
+  font-family: 'PT Root UI_Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: start;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+.exchange-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+.exchange-footer-partners button {
+  font-family: 'PT Root UI_Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: #00A3FF;
+  cursor: pointer;
+}
+.footer-partners-header {
+  width: 313px;
+  height: 40px;
+  padding: 0 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.footer-partners-header-title {
+  font-family: 'PT Root UI_Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.footer-partners-header-img {
+  width: auto;
+  height: 20px;
+  object-fit: cover;
+}
+.exchange-footer-partners p {
+  margin: 10px 0;
+  font-family: 'PT Root UI_Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.exchange-footer-partners a,
+.exchange-footer-partners span  {
+  /* width: 61px; */
+  display: block;
+  padding: 4px 0;
+  font-family: 'PT Root UI_Light';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: all 0.4s ease;
+}
+.exchange-footer-partners a:hover {
+  color: rgba(0, 163, 255, 1);
+}
+.exchange-footer-content ._partners .footer-partners-header-title {
+  color: rgba(38, 162, 124, 1);
+}
+.exchange-footer-content ._partners .footer-partners-header-img {
+  width: 40px;
+  height: 40px;
+  background: #26A27C;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.exchange-footer-content ._partners  .footer-partners-header {
+  padding-right: 0;
+}
+.exchange-footer-content ._partners p, 
+.exchange-footer-content ._partners span {
+  text-align: end;
+}
+.exchange-footer-content ._partners  h3 {
+  margin: 20px 0;
+  font-family: 'PT Root UI_Light';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer */
